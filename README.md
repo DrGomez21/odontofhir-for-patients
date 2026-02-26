@@ -1,8 +1,7 @@
-\# OdontoFhir for patients
+# OdontoFhir for patients
 
----
 
-\## Desarrolladores:
+## Desarrolladores:
 
 * Diego Gómez
 * José Cabrera
