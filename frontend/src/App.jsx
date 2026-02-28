@@ -6,6 +6,7 @@ import { Dashboard } from "./pages/Dashboard"
 import { Profile } from "./pages/Profile"
 import { ConsultasPage } from "./pages/Consultas"
 import { ConsultaDetail } from "./pages/ConsultaDetail"
+import { HistoriaPage } from "./pages/HistoriaPage"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Route path="/profile" element={<Profile />} />
       <Route path="/consultas" element={<ConsultasPage />} />
       <Route path="/consultas/:id" element={<ConsultaDetail />} />
+      <Route path="/historia" element={<HistoriaPage />} />
       <Route path="*" element={<ProximamentePage />} />
     </Routes>
   )

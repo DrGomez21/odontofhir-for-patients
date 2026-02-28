@@ -22,6 +22,10 @@ export const Dashboard = () => {
     navigate("/consultas")
   }
 
+  const goToHistoria = () => {
+    navigate("/historia")
+  }
+
   return (
     <>
       <HeaderApp />
@@ -43,7 +47,7 @@ export const Dashboard = () => {
           </div>
         </section>
 
-        <section className="w-full flex flex-col gap-2">
+        <section className="w-full flex flex-col gap-2" onClick={goToHistoria}>
           <TitleDescription title="Historia odontológica" description="Encontrá toda tu historia odontológica, de consultorios que utilizan tecnología FHIR." />
           <Historia patient={patient} />
         </section>

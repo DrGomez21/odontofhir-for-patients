@@ -90,6 +90,8 @@ export const ConsultaDetail = () => {
 
           </article>
 
+          <div className="h-0.5 bg-slate-100 w-full" />
+
           <article className="w-full flex gap-x-4">
             <img src={iconProcedimiento} className="size-10" />
 
