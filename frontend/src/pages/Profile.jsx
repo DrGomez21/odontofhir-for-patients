@@ -4,7 +4,6 @@ import { CalendarDays, ChevronLeft, CreditCard, Map, Phone, User } from "lucide-
 import { patient } from "@/utils/examples/patient"
 import { IconDescription } from "@/components/custom/IconDescription"
 import { TitleDescription } from "@/components/custom/TitleDescription"
-import { useNavigate } from "react-router-dom"
 
 export const Profile = () => {
 
