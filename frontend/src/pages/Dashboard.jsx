@@ -1,7 +1,10 @@
+import { ConsultaCard } from "@/components/custom/ConsultaCard"
 import { HeaderApp } from "@/components/custom/HeaderApp"
 import { PatientCard } from "@/components/custom/PatientCard"
 import { TitleDescription } from "@/components/custom/TitleDescription"
 import { patient } from "@/utils/examples/patient"
+import { consulta } from "@/utils/examples/encounter"
+import Carpeta from "@/src/assets/folder.svg"
 
 
 export const Dashboard = () => {
@@ -10,6 +13,11 @@ export const Dashboard = () => {
   // const getPatientById = (id) => {
   //   return
   // }
+
+
+  const goToConsultas = () => {
+    console.log("Consultas")
+  }
 
   return (
     <>
@@ -22,7 +30,14 @@ export const Dashboard = () => {
 
         <section className="w-full flex flex-col gap-2">
           <TitleDescription title="Consultas" description="Hacé seguimiento de todas las consultas que hiciste." />
-          <PatientCard patient={patient} />
+
+          {/* Acá va una grilla con una card de consulta y una imagen del folder */}
+          <div className="grid grid-cols-3 items-center gap-4">
+            <div className="col-span-2">
+              <ConsultaCard consulta={consulta} showBadge={false} />
+            </div>
+            <img src={Carpeta} alt="Carpeta de consultas" className="h-full" onClick={goToConsultas}/>
+          </div>
         </section>
 
         <section className="w-full flex flex-col gap-2">
