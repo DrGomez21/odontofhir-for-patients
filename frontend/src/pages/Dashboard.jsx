@@ -5,6 +5,7 @@ import { TitleDescription } from "@/components/custom/TitleDescription"
 import { patient } from "@/utils/examples/patient"
 import { consulta } from "@/utils/examples/encounter"
 import Carpeta from "@/src/assets/folder.svg"
+import { Historia } from "@/components/custom/Historia"
 
 
 export const Dashboard = () => {
@@ -42,7 +43,7 @@ export const Dashboard = () => {
 
         <section className="w-full flex flex-col gap-2">
           <TitleDescription title="Historia odontológica" description="Encontrá toda tu historia odontológica, de consultorios que utilizan tecnología FHIR." />
-          <PatientCard patient={patient} />
+          <Historia patient={patient} />
         </section>
       </main>
     </>
