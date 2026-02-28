@@ -13,7 +13,7 @@ export const LoginPage = () => {
 
   return (
     <main className="w-screen max-w-md mx-auto flex flex-col justify-center items-center h-svh px-4">
-      <LoginCard onClick={goToDashboard} />
+      <LoginCard onSubmit={goToDashboard} />
     </main>
   )
 }
