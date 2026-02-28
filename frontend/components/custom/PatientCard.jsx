@@ -2,8 +2,10 @@ import { Calendar, Phone } from "lucide-react"
 import { Avatar, AvatarImage } from "../ui/avatar"
 import { IconDescription } from "./IconDescription"
 import { Button } from "../ui/button"
+import { useNavigate } from "react-router-dom"
 
 export const PatientCard = ({ patient }) => {
+  const navigate = useNavigate()
   return (
     <div className="w-full flex flex-col gap-y-2 p-4 rounded-md border border-slate-200">
 
@@ -31,7 +33,7 @@ export const PatientCard = ({ patient }) => {
 
       </article>
 
-      <Button variant="text" size="sm" className="self-center mt-2">
+      <Button variant="text" size="sm" className="self-center mt-2" onClick={() => navigate("/profile")}>
         Ver Perfil Completo
       </Button>
 
