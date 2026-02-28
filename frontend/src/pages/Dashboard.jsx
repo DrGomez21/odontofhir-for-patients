@@ -6,6 +6,7 @@ import { patient } from "@/utils/examples/patient"
 import { consulta } from "@/utils/examples/encounter"
 import Carpeta from "@/src/assets/folder.svg"
 import { Historia } from "@/components/custom/Historia"
+import { useNavigate } from "react-router-dom"
 
 
 export const Dashboard = () => {
@@ -15,9 +16,10 @@ export const Dashboard = () => {
   //   return
   // }
 
+  const navigate = useNavigate()
 
   const goToConsultas = () => {
-    console.log("Consultas")
+    navigate("/consultas")
   }
 
   return (
@@ -37,7 +39,7 @@ export const Dashboard = () => {
             <div className="col-span-2">
               <ConsultaCard consulta={consulta} showBadge={false} />
             </div>
-            <img src={Carpeta} alt="Carpeta de consultas" className="h-full" onClick={goToConsultas}/>
+            <img src={Carpeta} alt="Carpeta de consultas" className="h-full hover:cursor-pointer" onClick={goToConsultas}/>
           </div>
         </section>
 
