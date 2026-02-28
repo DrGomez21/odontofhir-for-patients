@@ -23,7 +23,7 @@ export const HistoriaPage = () => {
           <h1 className="text-2xl font-semibold text-slate-900">Historia odontológica</h1>
         </header>
 
-        <section className="w-full flex flex-col gap-y-2 border border-slate-200 rounded-md">
+        <section className="w-full flex flex-col gap-y-2 border border-slate-200 rounded-md p-2">
 
           <Historia patient={patient} />
 
